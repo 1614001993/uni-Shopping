@@ -28,9 +28,9 @@
     }
   ],
   "globalStyle": {
-    "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#007AFF",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "淘好物",
+    "navigationBarBackgroundColor": "#ffa53d",
     "backgroundColor": "#FFFFFF"
   },
   "tabBar": {
