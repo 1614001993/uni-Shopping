@@ -23,6 +23,10 @@
                     "path" : "goods-list/goods-list",
                     "style" : {}
                 }
+                ,{
+                    "path" : "search/search",
+                    "style" : {}
+                }
             ]
       
     }
@@ -30,7 +34,7 @@
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "淘好物",
-    "navigationBarBackgroundColor": "#ffa53d",
+    "navigationBarBackgroundColor": "#ff6b00",
     "backgroundColor": "#FFFFFF"
   },
   "tabBar": {
