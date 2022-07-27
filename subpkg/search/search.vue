@@ -2,7 +2,7 @@
   <view>
     <!-- 输入框 -->
     <view class="search">
-      <uni-search-bar @confirm="search" @input="input" radius="18" cancelButton="none"></uni-search-bar>
+      <uni-search-bar @input="input" radius="18" cancelButton="none"></uni-search-bar>
     </view>
 
     <!-- 搜索建议 -->
