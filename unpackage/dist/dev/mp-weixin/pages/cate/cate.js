@@ -92,7 +92,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
-var components
+var components = {
+  mySearch: function() {
+    return __webpack_require__.e(/*! import() | components/my-search/my-search */ "components/my-search/my-search").then(__webpack_require__.bind(null, /*! @/components/my-search/my-search.vue */ 63))
+  }
+}
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -158,6 +162,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 var _default =
 {
   data: function data() {
@@ -176,8 +181,7 @@ var _default =
   },
   onLoad: function onLoad() {
     var sysinfo = uni.getSystemInfoSync();
-    this.windowHeight = sysinfo.windowHeight;
-    this.windowWeight = sysinfo.windowWidth;
+    this.windowHeight = sysinfo.windowHeight - 50;
     this.getCateList();
   },
   methods: {
@@ -202,6 +206,11 @@ var _default =
     gotoGoodsList: function gotoGoodsList(item) {
       uni.navigateTo({
         url: '/subpkg/goods-list/goods-list?cid=' + item.cat_id });
+
+    },
+    gotoSearch: function gotoSearch() {
+      uni.navigateTo({
+        url: '/subpkg/search/search' });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

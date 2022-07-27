@@ -10,14 +10,15 @@
       "root": "subpkg",
       "pages": [
         "goods-detail/goods-detail",
-        "goods-list/goods-list"
+        "goods-list/goods-list",
+        "search/search"
       ]
     }
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "淘好物",
-    "navigationBarBackgroundColor": "#ffa53d",
+    "navigationBarBackgroundColor": "#ff6b00",
     "backgroundColor": "#FFFFFF"
   },
   "tabBar": {

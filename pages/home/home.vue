@@ -1,5 +1,9 @@
 <template>
   <view>
+    <!-- 搜索组件 -->
+    <view class="searchComm">
+          <my-search @click="gotoSearch()"></my-search>
+    </view>
     <!-- 轮播图区域 -->
     <swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" :circular="true">
       <swiper-item v-for="(item,index) in swipperList" :key="index">
@@ -58,6 +62,12 @@
       this.getFloorList()
     },
     methods: {
+      //搜索
+      gotoSearch(){
+        uni.navigateTo({
+          url:'/subpkg/search/search'
+        })
+      },
       // 获取轮播图数据
       async getSwipperList() {
         const {
@@ -115,6 +125,11 @@
       width: 100%;
       height: 100%;
     }
+  }
+  .searchComm{
+    position: sticky;
+    top:0;
+    z-index: 999;
   }
 
   .nav-list {
